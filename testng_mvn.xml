@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="和通讯录V3.9.9" parallel="classes">
+    <parameter name = "port" value = "4723"/>
+	<parameter name = "udid" value = "18d48acc"/>
+	<parameter name = "ver" value = "4.3"/>
+	<test name="基本功能" preserver-order="true">
+		<groups>
+		    <define name="all">
+		        <include name="onecall"/>
+		        <include name="contact"/>
+		        <include name="mms"/>
+		        <include name="twocall"/>
+		        <exclude name="webview"/>
+		        <exclude name="login"/>
+		        <exclude name="other"/>
+		    </define>
+		    <define name="onecall">
+		        <include name="call"/>
+		        <exclude name="fixed"/>
+		    </define>	
+		    <define name="twocall">
+		        <include name="fixed"/>
+		        <exclude name="call"/>
+		    </define>
+		     <define name="test">
+		        <include name="test"/>
+		    </define>		
+		     <define name="mms">
+		        <include name="mms"/>
+		    </define>
+		    <define name="call">
+		        <include name="call"/>
+		    </define>
+		    <define name="contact">
+		        <include name="contact"/>
+		    </define>
+		    <define name="other">
+		        <include name="other"/>
+		    </define>
+		    <define name="debug">
+		        <include name="debug"/>
+		    </define>
+			<define name="bug">
+		        <include name="bug"/>
+		    </define>
+		    <define name="test">
+		        <include name="test"/>
+		    </define>
+		   	<define name="more">
+		        <include name="more"/>
+		    </define>
+		    <define name="webview">
+		        <include name="webview"/>
+		    </define>		    
+			<run>
+			    <include name="test"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.study.code.ChinaMoblie_more" /> 
+			<!-- <class name="com.study.code.ChinaMoblie_net" />-->
+		</classes>
+		<listeners>
+			<listener class-name="org.uncommons.reportng.HTMLReporter" />
+			<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+		</listeners>
+		 <usedefaultlisteners name="false" />
+	</test>
+</suite>
