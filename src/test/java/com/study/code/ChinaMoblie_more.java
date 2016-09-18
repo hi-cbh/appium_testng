@@ -3587,12 +3587,12 @@ public class ChinaMoblie_more {
 	/**
 	 * 手势滑动侧边栏与拨号页、联系人、信息切换。
 	 */
-	@Test(groups = { "other" })
+	@Test(groups = { "test" })
 	public void testCase_other_001() {
 		startTestCase();
 		// 联系人
 		clickById("tab_contacts");
-		for (int i = 0; i < 80; i++) {
+		for (int i = 0; i < 8; i++) {
 			swipeToRight();
 			sleepTime(1000);
 			swipeToLeft();
@@ -3603,7 +3603,7 @@ public class ChinaMoblie_more {
 		Myassert("当前界面不存在和通讯录", isExistenceById("iab_title"));
 
 		clickById("tab_call");
-		for (int i = 0; i < 80; i++) {
+		for (int i = 0; i < 8; i++) {
 			swipeToRight();
 			sleepTime(1000);
 			swipeToLeft();
@@ -3613,7 +3613,7 @@ public class ChinaMoblie_more {
 		Myassert("当前界面不存在和通讯录", isExistenceById("iab_title"));
 
 		clickById("tab_mms");
-		for (int i = 0; i < 80; i++) {
+		for (int i = 0; i < 8; i++) {
 			swipeToRight();
 			sleepTime(1000);
 			swipeToLeft();

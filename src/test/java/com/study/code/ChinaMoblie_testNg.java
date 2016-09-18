@@ -6121,9 +6121,6 @@ public class ChinaMoblie_testNg {
 			contactsRecycle();
 			return;
 		}
-		
-		
-		
 	}
 	
 	/**
