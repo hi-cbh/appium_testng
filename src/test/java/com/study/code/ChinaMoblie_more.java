@@ -3627,11 +3627,11 @@ public class ChinaMoblie_more {
 	/**
 	 * 验证侧边栏切换
 	 */
-	@Test(groups = { "other" })
+	@Test(groups = { "test" })
 	public void testCase_other_002() {
 		int i;
 		int num;
-		for (i = 0; i < 200; i++) {
+		for (i = 0; i < 20; i++) {
 			num = (int) (Math.random() * 10) % 5;
 			switch (num) {
 			case 4:
