@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="和通讯录V3.9.9" parallel="classes">
     <parameter name = "port" value = "4723"/>
-	<parameter name = "udid" value = "273f6343"/>
+	<parameter name = "udid" value = "0bd08bcc"/>
 	<parameter name = "ver" value = "4.3"/>
 	<test name="基本功能" preserver-order="true">
 		<groups>
